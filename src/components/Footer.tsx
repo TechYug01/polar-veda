@@ -15,7 +15,13 @@ const Footer = () => {
       <div className="mx-auto grid max-w-6xl auto-rows-fr grid-cols-1 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.png" alt="Polar Veda" width={40} height={40} />
+            <Image
+              src="/logo.jpeg"
+              alt="Polar Veda"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
             <span className="logo text-xl font-bold text-white">
               Polar Veda
             </span>

@@ -42,7 +42,13 @@ const Navbar = () => {
 
       <nav className="roboto relative z-50 mx-auto flex max-w-7xl items-center justify-between rounded-full border border-blue-200 bg-gradient-to-r from-blue-100/60 via-white/60 to-sky-100/60 px-6 py-3 text-gray-800 shadow-md backdrop-blur-lg">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Logo" width={36} height={36} />
+          <Image
+            src="/logo.jpeg"
+            alt="Logo"
+            width={36}
+            height={36}
+            className="rounded-full"
+          />
           <span className="logo text-xl font-bold">Polar Veda</span>
         </Link>
 
