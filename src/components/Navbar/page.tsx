@@ -40,7 +40,7 @@ const Navbar = () => {
     <>
       <Header />
 
-      <nav className="roboto relative z-50 mx-auto flex max-w-7xl items-center justify-between rounded-full border border-blue-200 bg-gradient-to-r from-blue-100/60 via-white/60 to-sky-100/60 px-6 py-3 text-gray-800 shadow-md backdrop-blur-lg">
+      <nav className="roboto relative z-50 mx-auto flex max-w-7xl items-center justify-between rounded-full bg-[#6F4D38] px-6 py-3 text-white shadow-md backdrop-blur-lg">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo.jpeg"
@@ -77,15 +77,15 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-10 left-0 z-20 w-56 rounded-xl border border-gray-200 bg-white py-2 shadow-lg"
+                  className="absolute top-10 left-0 z-20 w-58 rounded-xl border border-gray-200 bg-white py-2 text-black shadow-lg"
                 >
                   <li>
                     <Link
-                      href="/offerings/online-education"
+                      href="/offerings/online-tutoring"
                       onClick={() => setIsDropdownOpen((prev) => !prev)}
                       className="block px-4 py-2 hover:bg-sky-50"
                     >
-                      Online Education
+                      Online Tutoring
                     </Link>
                   </li>
                   <li>
@@ -112,7 +112,7 @@ const Navbar = () => {
                       onClick={() => setIsDropdownOpen((prev) => !prev)}
                       className="block px-4 py-2 hover:bg-sky-50"
                     >
-                      Technology Integration
+                      Personality Development
                     </Link>
                   </li>
                 </motion.ul>
@@ -144,7 +144,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="rounded-full border border-blue-300 bg-white/30 px-5 py-2 text-sm font-semibold text-sky-800 shadow-sm backdrop-blur-md transition hover:bg-white/50 hover:text-sky-900"
+            className="rounded-full border border-blue-300 bg-white/30 px-5 py-2 text-sm font-semibold text-white shadow-sm backdrop-blur-md transition hover:bg-white/50 hover:text-sky-900"
           >
             Contact Us
           </Link>

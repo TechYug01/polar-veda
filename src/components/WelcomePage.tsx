@@ -5,9 +5,9 @@ import { useRef } from "react";
 import CountUp from "react-countup";
 
 const stats = [
-  { end: 50, suffix: "+", label: "Courses Offered", color: "text-sky-500" },
+  { end: 15, suffix: "+", label: "Courses Offered", color: "text-sky-500" },
   {
-    end: 1000,
+    end: 500,
     suffix: "+",
     label: "Students Enrolled",
     color: "text-emerald-500",
@@ -41,9 +41,9 @@ const WelcomePage = () => {
           Welcome to Polar Veda
         </h1>
         <p className="text-lg text-gray-600">
-          We are dedicated to providing innovative online education and
-          personalized test preparation services for aspiring learners across
-          India.
+          We are dedicated to providing innovative online 1:1 tutoring,
+          education and personalized test preparation services for aspiring
+          learners globally.
         </p>
       </motion.div>
 

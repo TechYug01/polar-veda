@@ -1,8 +1,8 @@
 export const offerings = [
   {
-    title: "Online Education",
-    image: "/images/online-education.webp",
-    href: "/offerings/online-education",
+    title: "Online Tutoring",
+    image: "/images/online-tutoring.webp",
+    href: "/offerings/online-tutoring",
   },
   {
     title: "Test Preparation",
@@ -15,14 +15,14 @@ export const offerings = [
     href: "/offerings/addon-services",
   },
   {
-    title: "Technology Integration",
-    image: "/images/technology-integration.webp",
-    href: "/offerings/technology-integration",
+    title: "Personality Development",
+    image: "/images/personality-development.webp",
+    href: "/offerings/personality-development",
   },
 ];
 
 export const features = {
-  onlineEducation: [
+  onlineTutoring: [
     {
       title: "Live Classes",
       image: "/images/online-education/live-classes.webp",
@@ -76,7 +76,7 @@ export const features = {
       image: "/images/addon-services/career-counseling.webp",
     },
   ],
-  technologyIntegration: [
+  personalityDevelopment: [
     {
       title: "Integration Services",
       image: "/images/technology-integration/integration-services.webp",
@@ -113,9 +113,10 @@ export type Service = {
 };
 
 export const serviceData: Record<string, Service> = {
-  onlineEducation: {
-    title: "Online Education",
-    subTitle: "Engaging courses for all ages.",
+  onlineTutoring: {
+    title: "Online 1:1 Tutoring",
+    subTitle:
+      "Engaging courses from grade 1 to 12 and for working professionals of all ages.",
     description:
       "Our Online Education platform offers a wide range of courses designed for various learning levels. With interactive content and expert educators, students can enhance their skills from the comfort of their homes. We cater to all ages, providing personalized learning paths to ensure everyone achieves their educational goals.",
     keyPoints: [

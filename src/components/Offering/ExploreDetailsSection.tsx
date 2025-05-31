@@ -97,11 +97,11 @@ const ExploreDetails = () => {
   return (
     <>
       <ExploreDetailsSection
-        pageTitle="Online Education"
+        pageTitle="Online 1:1 & Group Tutoring"
         bg={0}
-        subtitle="Engaging courses for all ages."
-        link="/offerings/online-education"
-        features={features.onlineEducation}
+        subtitle="Engaging courses from grade 1 to 12 and for working professionals of all ages."
+        link="/offerings/online-tutoring"
+        features={features.onlineTutoring}
       />
       <ExploreDetailsSection
         pageTitle="Test Preparation"
@@ -122,7 +122,7 @@ const ExploreDetails = () => {
         bg={1}
         subtitle="Integrating tech for effective learning."
         link="/offerings/technology-integration"
-        features={features.technologyIntegration}
+        features={features.personalityDevelopment}
       />
     </>
   );
