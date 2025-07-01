@@ -84,6 +84,7 @@ const AboutUs = () => {
                 <Image
                   src={p.icon}
                   alt={p.title}
+                  fill
                   className="h-full w-full object-contain"
                 />
               </div>
@@ -174,6 +175,7 @@ const AboutUs = () => {
               <Image
                 src="/images/about.webp"
                 alt="About Polar Veda"
+                fill
                 className="h-full w-full rounded-2xl object-cover"
               />
             </motion.div>
