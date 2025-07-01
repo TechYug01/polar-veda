@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Resources = () => {
   return (
     <div className="-mt-8 flex flex-col">
-      <section className="relative h-[350px] w-full">
+      <section className="relative h-[300px] w-full">
         <div className="absolute inset-0 -z-10 bg-[url('/images/homepage.webp')] bg-cover bg-fixed bg-center brightness-[0.45]" />
 
         <div className="relative flex h-full items-center">

@@ -1,16 +1,46 @@
 "use client";
 
-import { renderStars } from "@/components/Reviews";
 import { reviews } from "@/data/reviewData";
 import { motion } from "framer-motion";
+import { Star, StarHalf } from "lucide-react";
 import Image from "next/image";
+
+export const renderStars = (rating: number) => {
+  const stars = [];
+  const full = Math.floor(rating);
+  const half = rating % 1 !== 0;
+  const total = 5;
+
+  for (let i = 0; i < full; i++) {
+    stars.push(
+      <Star
+        key={`full-${i}`}
+        className="h-4 w-4 fill-yellow-400 text-yellow-500"
+      />,
+    );
+  }
+
+  if (half) {
+    stars.push(
+      <StarHalf
+        key="half"
+        className="h-4 w-4 fill-yellow-400 text-yellow-500"
+      />,
+    );
+  }
+
+  for (let i = stars.length; i < total; i++) {
+    stars.push(<Star key={`empty-${i}`} className="h-4 w-4 text-gray-300" />);
+  }
+
+  return <div className="mb-3 flex justify-center">{stars}</div>;
+};
 
 const Reviews = () => {
   return (
     <div className="-mt-8 flex flex-col">
-      <section className="relative h-[350px] w-full">
+      <section className="relative h-[300px] w-full">
         <div className="absolute inset-0 -z-10 bg-[url('/images/homepage.webp')] bg-cover bg-fixed bg-center brightness-[0.45]" />
-
         <div className="relative flex h-full items-center">
           <div className="mx-auto w-full max-w-6xl px-4">
             <motion.h1
@@ -37,33 +67,45 @@ const Reviews = () => {
 
       <div className="bg-gradient-to-br from-white via-blue-50 to-sky-50/60">
         <div className="mx-auto my-20 grid max-w-6xl grid-cols-1 gap-8 px-4 md:grid-cols-3">
-          {reviews.map((review, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: idx * 0.15 }}
-              viewport={{ once: true }}
-              className="rounded-2xl border border-blue-100 bg-white/70 px-6 py-8 text-center shadow-sm backdrop-blur-md"
-            >
-              <div className="relative mx-auto mb-4 h-20 w-20">
-                <Image
-                  src={review.image}
-                  alt={review.name}
-                  fill
-                  className="rounded-full object-cover shadow-md"
-                />
-              </div>
+          {reviews.map((review, idx) => {
+            const baseProps = {
+              initial: { opacity: 0, y: 30 },
+              transition: { duration: 0.4, delay: idx * 0.15 },
+            };
 
-              <h3 className="mb-1 text-lg font-semibold text-sky-800">
-                {review.name}
-              </h3>
+            return (
+              <motion.div
+                key={idx}
+                {...baseProps}
+                {...(idx > 2
+                  ? {
+                      whileInView: { opacity: 1, y: 0 },
+                      viewport: { once: true },
+                    }
+                  : {
+                      animate: { opacity: 1, y: 0 },
+                    })}
+                className="rounded-2xl border border-blue-100 bg-white/70 px-6 py-8 text-center shadow-sm backdrop-blur-md"
+              >
+                <div className="relative mx-auto mb-4 h-20 w-20">
+                  <Image
+                    src={review.image}
+                    alt={review.name}
+                    fill
+                    className="rounded-full object-cover shadow-md"
+                  />
+                </div>
 
-              {renderStars(review.rating)}
+                <h3 className="mb-1 text-lg font-semibold text-sky-800">
+                  {review.name}
+                </h3>
 
-              <p className="text-sm text-gray-700">{review.text}</p>
-            </motion.div>
-          ))}
+                {renderStars(review.rating)}
+
+                <p className="text-sm text-gray-700">{review.text}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -31,8 +31,8 @@ export const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    value: "Kanpur, India",
-    href: "https://www.google.com/maps?q=Kanpur+India",
+    value: "Indore, India",
+    href: "https://www.google.com/maps?q=Indore+India",
   },
   {
     icon: Mail,
@@ -43,7 +43,7 @@ export const contactInfo = [
   {
     icon: Clock,
     title: "Office Timing",
-    value: "Mon - Sat • 9 AM - 7 PM",
+    value: "Mon - Sat • 9 AM - 7 PM IST",
     href: "#",
   },
 ];

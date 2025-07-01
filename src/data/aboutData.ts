@@ -18,14 +18,12 @@ export const pillars = [
 
 export const leadershipData = [
   {
-    image: "/dummy.webp",
     name: "Aarav Sharma",
     title: "Chief Technology Officer",
     description:
       "Aarav leads our tech innovations, ensuring our platform is user-friendly and effective.",
   },
   {
-    image: "/dummy.webp",
     name: "Priya Verma",
     title: "Head of Curriculum",
     description:
@@ -37,22 +35,18 @@ export const teamData = [
   {
     name: "Rahul Singh",
     title: "Customer Support Manager",
-    image: "/dummy.webp",
   },
   {
     name: "Neha Gupta",
     title: "Content Developer",
-    image: "/dummy.webp",
   },
   {
     name: "Vikram Desai",
     title: "Marketing Executive",
-    image: "/dummy.webp",
   },
   {
     name: "Sita Rao",
     title: "Research Analyst",
-    image: "/dummy.webp",
   },
 ];
 

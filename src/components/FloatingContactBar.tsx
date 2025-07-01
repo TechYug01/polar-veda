@@ -27,7 +27,7 @@ const FloatingContactBar = () => {
         <Mail className="text-white" size={20} />
       </Link>
       <Link
-        href="https://www.google.com/maps?q=Kanpur+India"
+        href="https://www.google.com/maps?q=Indore+India"
         target="_blank"
         className="rounded-full bg-purple-500 p-3 shadow-md transition-all hover:scale-110 hover:bg-purple-600"
       >

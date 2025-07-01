@@ -40,8 +40,8 @@ const Navbar = () => {
     <>
       <Header />
 
-      <nav className="roboto relative z-50 mx-auto flex max-w-7xl items-center justify-between rounded-full bg-[#6F4D38] px-6 py-3 text-white shadow-md backdrop-blur-lg">
-        <Link href="/" className="flex items-center gap-2">
+      <nav className="roboto max-[] relative z-50 mx-auto flex max-w-7xl items-center justify-between rounded-full bg-[#6F4D38] px-6 py-3 text-base text-white shadow-md backdrop-blur-lg max-[1000px]:text-sm max-[870px]:text-xs">
+        <Link href="/" className="flex items-center gap-3">
           <Image
             src="/logo.jpeg"
             alt="Logo"
@@ -49,7 +49,14 @@ const Navbar = () => {
             height={36}
             className="rounded-full"
           />
-          <span className="logo text-xl font-bold">Polar Veda</span>
+          <div className="logo leading-tight">
+            <span className="block text-xl font-bold max-[1000px]:text-sm max-[870px]:text-xs">
+              PolarVeda EdTech Pvt Ltd.
+            </span>
+            <span className="block text-xs font-light tracking-wide text-white/80 max-[1000px]:text-[10px] max-[870px]:text-[9px]">
+              Learning without Borders
+            </span>
+          </div>
         </Link>
 
         <ul className="hidden items-center gap-6 font-medium md:flex">
@@ -77,7 +84,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-10 left-0 z-20 w-58 rounded-xl border border-gray-200 bg-white py-2 text-black shadow-lg"
+                  className="absolute top-10 left-0 z-20 w-58 rounded-xl border border-gray-200 bg-white py-2 text-black shadow-lg max-[870px]:w-46"
                 >
                   <li>
                     <Link
@@ -99,16 +106,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      href="/offerings/addon-services"
-                      onClick={() => setIsDropdownOpen((prev) => !prev)}
-                      className="block px-4 py-2 hover:bg-sky-50"
-                    >
-                      Addon Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/offerings/technology-integration"
+                      href="/offerings/personality-development"
                       onClick={() => setIsDropdownOpen((prev) => !prev)}
                       className="block px-4 py-2 hover:bg-sky-50"
                     >
@@ -144,7 +142,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="rounded-full border border-blue-300 bg-white/30 px-5 py-2 text-sm font-semibold text-white shadow-sm backdrop-blur-md transition hover:bg-white/50 hover:text-sky-900"
+            className="rounded-full border border-blue-300 bg-white/20 px-5 py-2 font-semibold text-white shadow-sm backdrop-blur-md transition hover:bg-white/30 hover:text-sky-900"
           >
             Contact Us
           </Link>

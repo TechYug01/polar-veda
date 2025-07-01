@@ -1,340 +1,144 @@
-export const offerings = [
-  {
-    title: "Online Tutoring",
-    image: "/images/online-tutoring.webp",
-    href: "/offerings/online-tutoring",
-  },
-  {
-    title: "Test Preparation",
-    image: "/images/test-preparation.webp",
-    href: "/offerings/test-preparation",
-  },
-  {
-    title: "Addon Services",
-    image: "/images/addon-services.webp",
-    href: "/offerings/addon-services",
-  },
-  {
-    title: "Personality Development",
-    image: "/images/personality-development.webp",
-    href: "/offerings/personality-development",
-  },
-];
-
-export const features = {
-  onlineTutoring: [
-    {
-      title: "Live Classes",
-      image: "/images/online-education/live-classes.webp",
-    },
-    {
-      title: "Recorded Lectures",
-      image: "/images/online-education/recorded-lectures.webp",
-    },
-    {
-      title: "Interactive Quizzes",
-      image: "/images/online-education/interactive-quizzes.webp",
-    },
-    {
-      title: "Comprehensive Course Materials",
-      image: "/images/online-education/course-materials.webp",
-    },
-  ],
-  testPreparation: [
-    {
-      title: "Comprehensive Mock Tests",
-      image: "/images/test-preparation/mock-tests.webp",
-    },
-    {
-      title: "Comprehensive Test Preparation",
-      image: "/images/test-preparation/comprehensive-test-preparation.webp",
-    },
-    {
-      title: "Performance Analytics for Test Preparation",
-      image: "/images/test-preparation/performance-analytics.webp",
-    },
-    {
-      title: "Test Preparation Services",
-      image: "/images/test-preparation/test-preparation-services.webp",
-    },
-  ],
-  addonServices: [
-    {
-      title: "One-on-One Mentoring",
-      image: "/images/addon-services/mentoring.webp",
-    },
-    {
-      title: "Group Study Sessions",
-      image: "/images/addon-services/group-study.webp",
-    },
-    {
-      title: "Exclusive Content Access",
-      image: "/images/addon-services/exclusive-content.webp",
-    },
-    {
-      title: "Career Counseling",
-      image: "/images/addon-services/career-counseling.webp",
-    },
-  ],
-  personalityDevelopment: [
-    {
-      title: "Integration Services",
-      image: "/images/technology-integration/integration-services.webp",
-    },
-    {
-      title: "Mobile App Access",
-      image: "/images/technology-integration/mobile-app.webp",
-    },
-    {
-      title: "Technology Integration Services",
-      image:
-        "/images/technology-integration/technology-integration-services.webp",
-    },
-    {
-      title: "Analytics Dashboard Integration",
-      image: "/images/technology-integration/analytics-dashboard.webp",
-    },
-  ],
-};
-
-type Feature = {
-  image: string;
-  title: string;
-  description: string;
-  keyPoints: string[];
-};
-
-export type Service = {
-  title: string;
-  subTitle: string;
-  description: string;
-  keyPoints: string[];
-  pageData: Feature[];
-};
-
-export const serviceData: Record<string, Service> = {
+export const serviceData = {
   onlineTutoring: {
-    title: "Online 1:1 Tutoring",
+    title: "Online Tutoring at PolarVeda",
     subTitle:
-      "Engaging courses from grade 1 to 12 and for working professionals of all ages.",
+      "Personalized online tutoring tailored to both international and Indian curricula.",
     description:
-      "Our Online Education platform offers a wide range of courses designed for various learning levels. With interactive content and expert educators, students can enhance their skills from the comfort of their homes. We cater to all ages, providing personalized learning paths to ensure everyone achieves their educational goals.",
+      "At PolarVeda EdTech, we provide personalized online tutoring for students across the globe, tailored to both international and Indian curricula. From academic mastery to creative exploration, our expert tutors ensure every learner thrives with confidence.",
     keyPoints: [
-      "Interactive Learning",
-      "Expert Educators",
-      "Flexible Scheduling",
+      "Live & interactive sessions",
+      "Support for international & Indian boards",
+      "Creative & skill subject options",
     ],
     pageData: [
       {
-        image: "/images/online-education/live-classes.webp",
-        title: "Live Classes",
+        title: "International Curricula",
+        image: "/images/online-education/international-curricula.png",
         description:
-          "Join our live classes for an interactive and personalized online learning experience with expert educators guiding you throughout the journey.",
+          "Expert support for IB, IGCSE, GCSE, A-Levels, AP, British Curriculum (KS1-KS4), and more.",
         keyPoints: [
-          "Interactive Sessions",
-          "Expert Instructors",
-          "Flexible Scheduling",
+          "IB (PYP, MYP, IBDP) - Inquiry-based, concept-focused tutoring",
+          "IGCSE / A-Levels - Structured subject-wise support",
+          "AP - College-level preparation in STEM & Humanities",
+          "US Common Core, Australian, Canadian Boards",
         ],
       },
       {
-        image: "/images/online-education/recorded-lectures.webp",
-        title: "Recorded Lectures",
+        title: "Indian Curricula & Creative Learning",
+        image: "/images/online-education/indian-curricula.png",
         description:
-          "Our recorded lectures provide students with the flexibility to learn at their own pace while accessing high-quality educational content.",
+          "Comprehensive tutoring for CBSE & ICSE boards and enrichment in Fine Arts, Coding, etc.",
         keyPoints: [
-          "Flexible Learning",
-          "High-Quality Content",
-          "Expert Instructors",
+          "CBSE & ICSE (Grades 4-12)",
+          "Subjects: Math, Science, SST, English, Hindi",
+          "Creative skills: Art, Coding, Painting",
         ],
       },
       {
-        image: "/images/online-education/interactive-quizzes.webp",
-        title: "Interactive Quizzes",
+        title: "Focused Learning Options",
+        image: "/images/online-education/focused-learning.png",
         description:
-          "Our interactive quizzes are designed to enhance learning through engagement and immediate feedback, ensuring a unique educational experience.",
+          "Short-duration and topic-specific learning plans tailored to individual needs.",
         keyPoints: [
-          "Engaging learning experience",
-          "Instant feedback mechanism",
-          "Comprehensive subject coverage",
-        ],
-      },
-      {
-        image: "/images/online-education/course-materials.webp",
-        title: "Comprehensive Course Materials",
-        description:
-          "Our comprehensive course materials cater to various educational needs, ensuring quality and engagement for all learners.",
-        keyPoints: [
-          "Tailored for diverse learners",
-          "Interactive and engaging content",
-          "Accessible anytime, anywhere",
+          "Term-Based Tutoring",
+          "Topic-Specific Help",
+          "Competitive Exam Coaching",
         ],
       },
     ],
   },
+
   testPreparation: {
-    title: "Test Preparation",
-    subTitle: "Tailored test prep resources.",
+    title: "Test Preparation Courses",
+    subTitle:
+      "Expert-led programs for success in international and Indian competitive exams.",
     description:
-      "Our Test Preparation services provide students with the necessary tools to excel in their exams. From comprehensive study materials to mock tests, we ensure students are well-prepared. Our expert guidance helps them tackle various competitive exams with confidence and clarity.",
-    keyPoints: ["Mock Tests", "Study Guides", "Expert Guidance"],
+      "Ace every exam with confidence. Our expert-led test prep programs are designed to equip students with the skills, strategies, and support they need to score high and stand out.",
+    keyPoints: [
+      "Full-spectrum coaching for major exams",
+      "Mock tests & performance analysis",
+      "AI-backed learning paths",
+    ],
     pageData: [
       {
-        image: "/images/test-preparation/mock-tests.webp",
-        title: "Comprehensive Mock Tests",
+        title: "International Test Prep",
+        image: "/images/test-preparation/international-test.png",
         description:
-          "Our mock tests are meticulously designed to provide a comprehensive exam preparation experience, ensuring students are well-equipped for success.",
+          "Preparation for global standardized tests with expert strategies and practice tests.",
         keyPoints: [
-          "Realistic exam experience",
-          "Expertly crafted questions",
-          "Performance analytics",
+          "SAT, ACT, PSAT - Full coverage with mock tests",
+          "AP Exams - Subject-focused training",
+          "IELTS & TOEFL - English proficiency prep",
         ],
       },
       {
-        image: "/images/test-preparation/comprehensive-test-preparation.webp",
-        title: "Comprehensive Test Preparation",
+        title: "Indian Competitive Exams",
+        image: "/images/test-preparation/indian.png",
         description:
-          "Our comprehensive test preparation service offers tailored practice questions designed to help you excel in your exams with quality feedback and expert support.",
+          "Targeted preparation for JEE, NEET, CUET, Olympiads, Sainik School, NDA, CDS, and more.",
         keyPoints: [
-          "Tailored practice questions",
-          "Real-time performance feedback",
-          "Expert guidance available",
+          "JEE & NEET - PCM/PCB deep-dive",
+          "CUET, Olympiads, NTSE - Personalized prep",
+          "Defence Exams - NDA, CDS, Sainik School",
         ],
       },
       {
-        image: "/images/test-preparation/performance-analytics.webp",
-        title: "Performance Analytics for Test Preparation",
-        description:
-          "Our performance analytics service offers personalized insights for effective test preparation, enhancing your learning experience with data-driven strategies.",
+        title: "Why Choose PolarVeda for Test Prep?",
+        image: "/images/test-preparation/choose.png",
+        description: "Unique value propositions that set our test prep apart.",
         keyPoints: [
-          "Data-Driven Insights",
-          "Personalized Study Plans",
-          "Real-Time Performance Tracking",
-        ],
-      },
-      {
-        image: "/images/test-preparation/test-preparation-services.webp",
-        title: "Test Preparation Services",
-        description:
-          "Our test preparation services offer curated study materials tailored to boost your performance and confidence for any examination.",
-        keyPoints: [
-          "Comprehensive resources",
-          "Expertly crafted content",
-          "Focused study plans",
+          "Experienced Mentors",
+          "AI-Driven Paths",
+          "Real-Time Doubt Support",
+          "Mock Tests & Analysis",
         ],
       },
     ],
   },
-  addonServices: {
-    title: "Addon Services",
-    subTitle: "Additional resources for better outcomes.",
+
+  personalityDevelopment: {
+    title: "Personality Development",
+    subTitle:
+      "Empowering learners with confidence, communication, and charisma.",
     description:
-      "We offer various Addon Services that complement our main offerings. These include personal mentoring, access to exclusive webinars, and tailored study plans. Our goal is to provide holistic support to learners, ensuring they have all the resources they need to succeed.",
+      "Our Personality Development Program is designed to empower students and professionals with essential life skills that boost confidence, communication, and charisma — both on stage and in real life.",
     keyPoints: [
-      "Personal Mentoring",
-      "Exclusive Webinars",
-      "Tailored Study Plans",
+      "Communication & English Skills",
+      "Public Speaking & Body Language",
+      "Workshops & Interview Prep",
     ],
     pageData: [
       {
-        image: "/images/addon-services/mentoring.webp",
-        title: "One-on-One Mentoring",
+        title: "Communication & Public Speaking",
+        image: "/images/personality-development/communication.png",
         description:
-          "Our one-on-one mentoring offers personalized guidance to enhance your learning experience, ensuring you achieve your academic and professional goals.",
+          "Build fluency and presentation skills to speak confidently in any setting.",
         keyPoints: [
-          "Personalized guidance",
-          "Flexible scheduling",
-          "Expert mentors",
+          "Clarity, Fluency, Expression",
+          "Overcome Stage Fear",
+          "Effective Speech Delivery",
         ],
       },
       {
-        image: "/images/addon-services/group-study.webp",
-        title: "Group Study Sessions",
+        title: "Confidence, Etiquette & Interview Prep",
+        image: "/images/personality-development/confidence.png",
         description:
-          "Our group study sessions provide a dynamic environment tailored for collaborative learning, ensuring each participant thrives with expert guidance.",
+          "Training in body language, decision making, etiquette, and mock interviews.",
         keyPoints: [
-          "Collaborative learning",
-          "Expert guidance",
-          "Flexible scheduling",
+          "Posture, Tone & Gestures",
+          "Self-Awareness & Leadership",
+          "Mock Interviews & Resume Polishing",
         ],
       },
       {
-        image: "/images/addon-services/exclusive-content.webp",
-        title: "Exclusive Content Access",
+        title: "Creative Writing & Expression",
+        image: "/images/personality-development/creative.png",
         description:
-          "Our exclusive content is crafted to elevate your learning experience with top-notch resources tailored just for you.",
+          "Develop storytelling skills and creative expression through writing exercises.",
         keyPoints: [
-          "Exclusive Learning Materials",
-          "Tailored Educational Resources",
-          "Expertly Curated Content",
-        ],
-      },
-      {
-        image: "/images/addon-services/career-counseling.webp",
-        title: "Career Counseling",
-        description:
-          "Our career counseling service offers personalized guidance to help you navigate your career path effectively and confidently.",
-        keyPoints: [
-          "Personalized guidance",
-          "Expert advisors",
-          "Diverse career options",
-        ],
-      },
-    ],
-  },
-  technologyIntegration: {
-    title: "Technology Integration",
-    subTitle: "Integrating tech for effective learning.",
-    description:
-      "At Polar Veda, we believe in harnessing technology to improve education. Our Technology Integration services ensure that learners benefit from the latest advancements in ed-tech. We provide solutions that make learning more engaging and effective, preparing students for a tech-driven future.",
-    keyPoints: [
-      "Latest Ed-Tech Tools",
-      "Engaging Content",
-      "Seamless Learning Experience",
-    ],
-    pageData: [
-      {
-        image: "/images/technology-integration/integration-services.webp",
-        title: "Integration Services",
-        description:
-          "Our Integration Services enhance educational experiences through customized solutions, ensuring quality and efficiency in learning management systems.",
-        keyPoints: [
-          "Custom LMS Solutions",
-          "Seamless Integration",
-          "Expert Training Provided",
-        ],
-      },
-      {
-        image: "/images/technology-integration/mobile-app.webp",
-        title: "Mobile App Access",
-        description:
-          "Our mobile app access ensures personalized learning experiences, enhancing engagement and education for students.",
-        keyPoints: [
-          "Seamless integration",
-          "User-friendly interface",
-          "Real-time access",
-        ],
-      },
-      {
-        image:
-          "/images/technology-integration/technology-integration-services.webp",
-        title: "Technology Integration Services",
-        description:
-          "Our technology integration services offer innovative solutions for seamless virtual classrooms, tailored to enhance student engagement and learning outcomes.",
-        keyPoints: [
-          "Innovative Learning Solutions",
-          "Seamless Technology Setup",
-          "Enhancing Student Engagement",
-        ],
-      },
-      {
-        image: "/images/technology-integration/analytics-dashboard.webp",
-        title: "Analytics Dashboard Integration",
-        description:
-          "Our Analytics Dashboard Integration offers customized solutions for effective data management and insights, empowering educational institutions to leverage technology for better outcomes.",
-        keyPoints: [
-          "Real-time data insights",
-          "User-friendly interface",
-          "Customizable features",
+          "Creative Writing Techniques",
+          "Storytelling & Imagination",
+          "For students, professionals, and job seekers",
         ],
       },
     ],
