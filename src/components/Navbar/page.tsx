@@ -208,20 +208,11 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          href="/offerings/addon-services"
+                          href="/offerings/personality-development"
                           onClick={() => setIsDropdownOpen((prev) => !prev)}
                           className={navLinkStyle}
                         >
-                          Addon Services
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/offerings/technology-integration"
-                          onClick={() => setIsDropdownOpen((prev) => !prev)}
-                          className={navLinkStyle}
-                        >
-                          Technology Integration
+                          Personality Development
                         </Link>
                       </li>
                     </motion.ul>
