@@ -102,6 +102,7 @@ const Offerings = ({
                     layout="responsive"
                     width={4}
                     height={3}
+                    loading="lazy"
                     className="rounded-2xl object-contain"
                   />
                 </div>

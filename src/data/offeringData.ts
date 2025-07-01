@@ -73,7 +73,7 @@ export const serviceData = {
       },
       {
         title: "Indian Competitive Exams",
-        image: "/images/test-preparation/indian.png",
+        image: "/images/test-preparation/indian-test.png",
         description:
           "Targeted preparation for JEE, NEET, CUET, Olympiads, Sainik School, NDA, CDS, and more.",
         keyPoints: [
