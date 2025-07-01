@@ -25,6 +25,7 @@ const AIEnhancedFeedbackPage = () => {
         >
           {aiFeedbackContent.description}
         </motion.p>
+
         <div className="mt-4 space-y-4 text-justify">
           {aiFeedbackContent.points.map((text, i) => (
             <motion.p
