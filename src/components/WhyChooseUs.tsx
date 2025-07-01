@@ -21,10 +21,10 @@ const WhyChooseUs = () => {
             Real Teachers. Real Growth. Real Results.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-sm text-gray-600">
-            We're not just another online tutoring platform—we're your partner
-            in unlocking every child's full potential. At the heart of our
-            mission is a simple belief: every learner is unique, and so should
-            be their learning journey.
+            We&apos;re not just another online tutoring platform—we&apos;re your
+            partner in unlocking every child&apos;s full potential. At the heart
+            of our mission is a simple belief: every learner is unique, and so
+            should be their learning journey.
           </p>
         </motion.div>
 

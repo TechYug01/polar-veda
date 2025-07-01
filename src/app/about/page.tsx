@@ -3,6 +3,7 @@
 import { features, leadershipData, pillars, teamData } from "@/data/aboutData";
 import { motion } from "framer-motion";
 import { BadgeCheck } from "lucide-react";
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
@@ -59,14 +60,14 @@ const AboutUs = () => {
             <p className="mt-4">
               Whether your child is mastering core subjects or preparing for
               international curriculums, we tailor every lesson to fit the
-              learner's needs. With customized programs aligned with
-              country-specific syllabi, we ensure our students don't just keep
-              up—they stay ahead.
+              learner&apos;s needs. With customized programs aligned with
+              country-specific syllabi, we ensure our students don&apos;t just
+              keep up—they stay ahead.
             </p>
           </div>
           <p className="mt-4 font-semibold text-gray-900">
             Join PolarVeda, where personal attention meets global education, and
-            let your child's success story begin!!
+            let your child&apos;s success story begin!!
           </p>
         </motion.div>
 
@@ -80,7 +81,7 @@ const AboutUs = () => {
               className="flex flex-col items-center rounded-2xl border border-blue-100 bg-white/70 p-8 shadow-sm backdrop-blur-md"
             >
               <div className="mb-4 h-14 w-14">
-                <img
+                <Image
                   src={p.icon}
                   alt={p.title}
                   className="h-full w-full object-contain"
@@ -170,7 +171,7 @@ const AboutUs = () => {
               viewport={{ once: true }}
               className="relative h-[425px] w-full overflow-hidden rounded-2xl border border-blue-100 bg-white/60 shadow-sm backdrop-blur-md"
             >
-              <img
+              <Image
                 src="/images/about.webp"
                 alt="About Polar Veda"
                 className="h-full w-full rounded-2xl object-cover"
