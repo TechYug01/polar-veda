@@ -31,7 +31,7 @@ const Offerings = ({
     <div className="-mt-8 flex flex-col">
       <section className="relative h-[300px] w-full">
         <div
-          className="absolute inset-0 -z-10 bg-cover bg-center brightness-[0.45]"
+          className="absolute inset-0 -z-10 bg-cover bg-fixed bg-center brightness-[0.45]"
           style={{ backgroundImage: `url(/images/${serviceName}.webp)` }}
         />
         <div className="relative flex h-full items-center">
