@@ -33,3 +33,11 @@
     transform: scale(1);
   }
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .safari-bg-scroll {
+      background-attachment: scroll !important;
+    }
+  }
+}

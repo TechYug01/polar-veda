@@ -10,7 +10,7 @@ const AboutUs = () => {
     <div className="-mt-8 flex flex-col">
       <section className="relative h-[300px] w-full">
         <div
-          className="absolute inset-0 -z-10 bg-cover bg-fixed bg-center brightness-[0.45]"
+          className="safari-bg-scroll absolute inset-0 -z-10 bg-cover bg-fixed bg-center brightness-[0.45]"
           style={{ backgroundImage: "url(/images/homepage.webp)" }}
         />
         <div className="relative flex h-full items-center">
@@ -83,12 +83,12 @@ const AboutUs = () => {
               transition={{ duration: 0.5, delay: i * 0.15 }}
               className="flex flex-col items-center rounded-2xl border border-blue-100 bg-white/70 p-8 shadow-sm backdrop-blur-md"
             >
-              <div className="mb-4 h-14 w-14">
+              <div className="relative mb-4 h-14 w-14">
                 <Image
                   src={p.icon}
                   alt={p.title}
                   fill
-                  className="h-full w-full object-contain"
+                  className="object-contain"
                 />
               </div>
               <h3 className="mb-2 text-xl font-semibold text-sky-800">

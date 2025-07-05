@@ -8,7 +8,7 @@ const HomePage = () => {
     <div className="relative -mt-8 flex min-h-[86vh] flex-col items-center justify-center px-6 text-white">
       <div className="absolute inset-0 -z-10">
         <div
-          className="h-full w-full bg-cover bg-fixed bg-center brightness-[0.45]"
+          className="safari-bg-scroll h-full w-full bg-cover bg-fixed bg-center brightness-[0.45]"
           style={{ backgroundImage: "url(/images/homepage.webp)" }}
         />
       </div>
