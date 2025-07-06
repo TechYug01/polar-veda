@@ -10,7 +10,7 @@ const AboutUs = () => {
     <div className="-mt-8 flex flex-col">
       <section className="relative h-[300px] w-full">
         <div
-          className="safari-bg-adjust absolute inset-0 -z-10 bg-cover bg-scroll bg-center brightness-[0.45]"
+          className="safari-bg-adjust absolute inset-0 -z-10 bg-cover bg-center brightness-[0.45]"
           style={{ backgroundImage: "url(/images/homepage.webp)" }}
         />
         <div className="relative flex h-full items-center">
@@ -63,14 +63,14 @@ const AboutUs = () => {
             <p className="mt-4">
               Whether your child is mastering core subjects or preparing for
               international curriculums, we tailor every lesson to fit the
-              learner&apos;s needs. With customized programs aligned with
-              country-specific syllabi, we ensure our students don&apos;t just
-              keep up—they stay ahead.
+              learner's needs. With customized programs aligned with
+              country-specific syllabi, we ensure our students don't just keep
+              up—they stay ahead.
             </p>
           </div>
           <p className="mt-4 font-semibold text-gray-900">
             Join PolarVeda, where personal attention meets global education, and
-            let your child&apos;s success story begin!!
+            let your child's success story begin!!
           </p>
         </motion.div>
 
@@ -101,7 +101,7 @@ const AboutUs = () => {
       </section>
 
       <section className="w-full bg-gradient-to-br from-white via-blue-50 to-sky-50/60 px-4 py-20 text-gray-800">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-7xl">
           <h2 className="text-center text-3xl font-bold text-gray-800 md:text-4xl">
             Our Leadership Team
           </h2>
@@ -113,14 +113,45 @@ const AboutUs = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: idx * 0.15 }}
                 viewport={{ once: true }}
-                className="group w-full max-w-[340px] cursor-pointer rounded-2xl bg-white shadow-lg transition duration-300 hover:scale-105"
+                className="group w-full max-w-[550px] cursor-pointer rounded-2xl bg-white shadow-lg transition duration-300 hover:scale-105"
               >
-                <div className="rounded-t-2xl bg-sky-600 py-5 text-center text-white">
-                  <h3 className="text-lg font-semibold">{leader.name}</h3>
-                  <p className="text-sm">{leader.title}</p>
+                <div className="rounded-t-2xl bg-gradient-to-br from-teal-50 via-teal-100 to-teal-200 py-4 text-center text-gray-700">
+                  <h3 className="text-lg font-semibold uppercase">
+                    {leader.title}
+                  </h3>
                 </div>
-                <div className="p-4">
-                  <p className="text-gray-700">{leader.description}</p>
+                <div className="relative h-100 w-full">
+                  <Image
+                    src={`/${leader.image}`}
+                    alt={leader.name}
+                    fill
+                    className="rounded-none object-cover object-center"
+                  />
+                </div>
+                <div className="px-4 py-5 text-center">
+                  <h4 className="text-lg font-bold text-sky-800">
+                    {leader.name}
+                  </h4>
+                  {leader.education && (
+                    <p className="mt-1 text-sm text-gray-600 italic">
+                      {leader.education}
+                    </p>
+                  )}
+                  {[
+                    "description1",
+                    "description2",
+                    "description3",
+                    "description4",
+                  ]
+                    .filter((key) => leader[key as keyof typeof leader])
+                    .map((key, i) => (
+                      <p
+                        key={i}
+                        className="mt-3 text-justify text-sm text-gray-700"
+                      >
+                        {leader[key as keyof typeof leader]}
+                      </p>
+                    ))}
                 </div>
               </motion.div>
             ))}
@@ -131,7 +162,7 @@ const AboutUs = () => {
       <section className="w-full bg-white px-4 py-20 text-gray-800">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center text-3xl font-bold md:text-4xl">Team</h2>
-          <div className="mt-12 grid grid-cols-2 gap-8 md:grid-cols-4">
+          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
             {teamData.map((member, idx) => (
               <motion.div
                 key={idx}

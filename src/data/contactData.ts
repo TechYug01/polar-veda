@@ -13,10 +13,14 @@ export const socials = [
   },
   { icon: Facebook, href: "https://facebook.com/polarveda", label: "Facebook" },
   { icon: X, href: "https://x.com/polarveda", label: "X" },
-  { icon: Youtube, href: "https://youtube.com/@polarveda", label: "YouTube" },
+  {
+    icon: Youtube,
+    href: "https://www.youtube.com/@PolarVedaEducation",
+    label: "YouTube",
+  },
   {
     icon: Linkedin,
-    href: "https://linkedin.com/company/polarveda",
+    href: "https://www.linkedin.com/company/107797170/admin/dashboard/",
     label: "LinkedIn",
   },
 ];
@@ -25,8 +29,8 @@ export const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "+91 9755435234",
-    href: "tel:+919755435234",
+    value: "+91 8109491326",
+    href: "tel:+918109491326",
   },
   {
     icon: MapPin,
@@ -37,8 +41,8 @@ export const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "mishraanshu856@gmail.com",
-    href: "mailto:mishraanshu856@gmail.com",
+    value: "education@polarveda.co.in",
+    href: "mailto:education@polarveda.co.in",
   },
   {
     icon: Clock,

@@ -142,7 +142,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="rounded-full border border-blue-300 bg-white/20 px-5 py-2 font-semibold text-white shadow-sm backdrop-blur-md transition hover:bg-white/30 hover:text-sky-900"
+            className="rounded-full border border-blue-300 bg-white/20 px-5 py-2 font-semibold text-white shadow-sm backdrop-blur-md transition hover:bg-white/30 hover:text-sky-900 max-[777px]:px-4"
           >
             Contact Us
           </Link>

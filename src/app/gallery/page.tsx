@@ -20,7 +20,7 @@ const Gallery = () => {
     <div className="-mt-8 flex flex-col">
       <section className="relative h-[300px] w-full">
         <div
-          className="safari-bg-scroll absolute inset-0 -z-10 bg-cover bg-fixed bg-center brightness-[0.45]"
+          className="safari-bg-adjust absolute inset-0 -z-10 bg-cover bg-center brightness-[0.45]"
           style={{ backgroundImage: "url(/images/homepage.webp)" }}
         />
 

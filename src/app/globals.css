@@ -34,10 +34,14 @@
   }
 }
 
+.safari-bg-adjust {
+  background-attachment: fixed;
+}
+
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
     .safari-bg-adjust {
-      background-size: 100% auto !important;
+      background-attachment: scroll !important;
     }
   }
 }

@@ -1,3 +1,5 @@
+import { desc, image } from "framer-motion/client";
+
 export const pillars = [
   {
     icon: "/mission.svg",
@@ -18,35 +20,45 @@ export const pillars = [
 
 export const leadershipData = [
   {
-    name: "Aarav Sharma",
-    title: "Chief Technology Officer",
-    description:
-      "Aarav leads our tech innovations, ensuring our platform is user-friendly and effective.",
+    name: "Mr. Virendra Kumar Mishra",
+    title: "DIRECTOR",
+    education: "M.Sc. (Mathematics, Gold Medalist), M.Ed.",
+    image: "images/team/virendra.jpeg",
+    description1:
+      "Mr. Virendra Kumar Mishra is a distinguished academician and visionary leader with over 35 years of experience in teaching, educational leadership, and institutional administration. A Gold Medalist in Mathematics, he brings an unwavering commitment to academic excellence and a forward-thinking approach to education.",
+    description2:
+      "Throughout his illustrious career, Mr. Mishra has mentored over 25,000 students, trained more than 1,000 teachers, and successfully led 10+ educational institutions as Principal or Academic Head. His areas of expertise span Mathematics instruction, curriculum design, teacher training, and academic strategy development, all rooted in a deep understanding of learner needs.",
+    description3:
+      "Throughout his illustrious career, Mr. Mishra has mentored over 25,000 students, trained more than 1,000 teachers, and successfully led 10+ educational institutions as Principal or Academic Head. His areas of expertise span Mathematics instruction, curriculum design, teacher training, and academic strategy development, all rooted in a deep understanding of learner needs.",
   },
+
   {
-    name: "Priya Verma",
-    title: "Head of Curriculum",
-    description:
-      "Priya oversees curriculum development, focusing on quality and relevance in education.",
+    name: "Er. Alok Kumar Mishra",
+    title: "FOUNDER",
+    image: "images/team/alok.jpeg",
+    description1:
+      "Er. Alok Kumar Mishra is a passionate educator, Technologist, and youth mentor with a dynamic background in technology, defense, and global education. A former Cloud Architect Engineer at one of India's leading MNCs, he has successfully cleared several prestigious government and defense examinations, including being UPSC CDS qualified and SSB recommended with an AIR 29. A dedicated marathon runner and accomplished martial artist, he holds a State Bronze Medal in Karate and is a certified Green Belt.",
+    description2:
+      "While working full-time as a software engineer, Alok simultaneously pursued his passion for teaching by actively engaging in the Ed-Tech industry. He has taught and mentored more than 5000+ students over the last 5 years across the USA, UK, Canada, Australia, and the UAE, delivering high-quality instruction aligned with diverse international curricula such as SAT, PSAT, US Common Core, IGCSE, NAPLAN, SELECTIVE and CBSE. As a Turito Certified SAT and PSAT Educator and an International Mathematics and Science Educator, he brings a global perspective to his teaching, emphasizing concept clarity, analytical thinking, and skill-building.",
+    description3:
+      "As the founder of PolarVeda Ed Tech Pvt. Ltd., he combines his technical expertise and academic insight to create a platform focused on 1:1 personalized learning, mentorship, and holistic student development. He is also a trusted SSB Mentor, guiding aspirants through the Services Selection Board (SSB) interview process and training them in communication, leadership, and interpersonal skills.",
+    description4:
+      "A committed motivational speaker, avid reader, and philanthropist, Alok actively participates in social initiatives focused on education and youth empowerment, consistently striving to inspire change through learning, discipline, and service.",
   },
 ];
 
 export const teamData = [
   {
-    name: "Rahul Singh",
-    title: "Customer Support Manager",
+    name: "Arshita Singh",
+    title: "Content and Design Head",
   },
   {
-    name: "Neha Gupta",
-    title: "Content Developer",
+    name: "Abhay Verma",
+    title: "Tech Lead",
   },
   {
-    name: "Vikram Desai",
-    title: "Marketing Executive",
-  },
-  {
-    name: "Sita Rao",
-    title: "Research Analyst",
+    name: "Piyush Kumar",
+    title: "Digital Marketing",
   },
 ];
 
