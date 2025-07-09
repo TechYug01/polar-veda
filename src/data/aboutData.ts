@@ -23,7 +23,7 @@ export const leadershipData = [
     name: "Mr. Virendra Kumar Mishra",
     title: "DIRECTOR",
     education: "M.Sc. (Mathematics, Gold Medalist), M.Ed.",
-    image: "images/team/virendra.jpeg",
+    image: "images/team/virendra.jpg",
     description1:
       "Mr. Virendra Kumar Mishra is a distinguished academician and visionary leader with over 35 years of experience in teaching, educational leadership, and institutional administration. A Gold Medalist in Mathematics, he brings an unwavering commitment to academic excellence and a forward-thinking approach to education.",
     description2:
