@@ -1,5 +1,3 @@
-import { desc, image } from "framer-motion/client";
-
 export const pillars = [
   {
     icon: "/mission.svg",
