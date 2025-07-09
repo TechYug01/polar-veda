@@ -63,14 +63,14 @@ const AboutUs = () => {
             <p className="mt-4">
               Whether your child is mastering core subjects or preparing for
               international curriculums, we tailor every lesson to fit the
-              learner's needs. With customized programs aligned with
-              country-specific syllabi, we ensure our students don't just keep
-              up—they stay ahead.
+              learner&apos;s needs. With customized programs aligned with
+              country-specific syllabi, we ensure our students don&apos;t just
+              keep up—they stay ahead.
             </p>
           </div>
           <p className="mt-4 font-semibold text-gray-900">
             Join PolarVeda, where personal attention meets global education, and
-            let your child's success story begin!!
+            let your child&apos;s success story begin!!
           </p>
         </motion.div>
 
