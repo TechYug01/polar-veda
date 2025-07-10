@@ -142,6 +142,7 @@ const AboutUs = () => {
                     "description2",
                     "description3",
                     "description4",
+                    "description5",
                   ]
                     .filter((key) => leader[key as keyof typeof leader])
                     .map((key, i) => (

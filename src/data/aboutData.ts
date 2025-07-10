@@ -23,11 +23,15 @@ export const leadershipData = [
     education: "M.Sc. (Mathematics, Gold Medalist), M.Ed.",
     image: "images/team/virendra.jpg",
     description1:
-      "Mr. Virendra Kumar Mishra is a distinguished academician and visionary leader with over 35 years of experience in teaching, educational leadership, and institutional administration. A Gold Medalist in Mathematics, he brings an unwavering commitment to academic excellence and a forward-thinking approach to education.",
+      "Mr. Virendra Kumar Mishra is a distinguished academician and visionary leader with over 35+ years of excellence in teaching, educational leadership, and institutional administration. A Gold Medalist in Mathematics, he is widely respected for his unwavering commitment to academic rigor, innovation in pedagogy, and nurturing of holistic learning environments.",
     description2:
-      "Throughout his illustrious career, Mr. Mishra has mentored over 25,000 students, trained more than 1,000 teachers, and successfully led 10+ educational institutions as Principal or Academic Head. His areas of expertise span Mathematics instruction, curriculum design, teacher training, and academic strategy development, all rooted in a deep understanding of learner needs.",
+      "Over the course of his illustrious career, Mr. Mishra has mentored more than 25,000+ students and trained over 5,000+ educators, leaving a profound impact on generations of learners and teachers alike. He has successfully helmed 10+ prestigious educational institutions as Principal or Academic Head, driving transformative growth and academic achievement.",
     description3:
-      "Throughout his illustrious career, Mr. Mishra has mentored over 25,000 students, trained more than 1,000 teachers, and successfully led 10+ educational institutions as Principal or Academic Head. His areas of expertise span Mathematics instruction, curriculum design, teacher training, and academic strategy development, all rooted in a deep understanding of learner needs.",
+      "His core areas of expertise include Mathematics instruction, curriculum design, teacher training, and academic strategy development, all shaped by a deep and empathetic understanding of learner psychology and evolving educational needs.",
+    description4:
+      "Beyond the classroom, Mr. Mishra has actively contributed to the broader academic community. He has hosted numerous SAHODAYA meets and served as the convener for various CBSE cohorts, annual conferences, and collaborative forums, fostering knowledge exchange, policy dialogue, and professional development across institutions.",
+    description5:
+      "With a legacy rooted in excellence and a future-focused mindset, Mr. Mishra continues to inspire educators and learners to strive for brilliance and integrity in all pursuits.",
   },
 
   {
