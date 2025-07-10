@@ -3,11 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Facebook from "@/../public/facebook.svg";
-import Instagram from "@/../public/insta.svg";
-import Linkedin from "@/../public/linkedin.svg";
-import X from "@/../public/x.svg";
-import Youtube from "@/../public/yt.svg";
+import { socials } from "@/data/contactData";
 
 const Footer = () => {
   return (
@@ -110,33 +106,7 @@ const Footer = () => {
       <div className="mx-auto mt-12 max-w-7xl pb-6">
         <h4 className="mb-2 text-base font-semibold text-white">Follow Us</h4>
         <div className="flex flex-wrap gap-4">
-          {[
-            {
-              href: "https://instagram.com/polarveda",
-              Icon: Instagram,
-              label: "Instagram",
-            },
-            {
-              href: "https://facebook.com/polarveda",
-              Icon: Facebook,
-              label: "Facebook",
-            },
-            {
-              href: "https://x.com/polarveda",
-              Icon: X,
-              label: "X",
-            },
-            {
-              href: "https://youtube.com/@polarveda",
-              Icon: Youtube,
-              label: "YouTube",
-            },
-            {
-              href: "https://linkedin.com/company/polarveda",
-              Icon: Linkedin,
-              label: "LinkedIn",
-            },
-          ].map(({ href, Icon, label }) => (
+          {socials.map(({ href, icon: Icon, label }) => (
             <Link
               key={label}
               href={href}

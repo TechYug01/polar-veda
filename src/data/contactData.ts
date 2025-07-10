@@ -8,11 +8,15 @@ import { Clock, Mail, MapPin, Phone } from "lucide-react";
 export const socials = [
   {
     icon: Instagram,
-    href: "https://instagram.com/polarveda",
+    href: "https://instagram.com/polarveda_edu",
     label: "Instagram",
   },
-  { icon: Facebook, href: "https://facebook.com/polarveda", label: "Facebook" },
-  { icon: X, href: "https://x.com/polarveda", label: "X" },
+  {
+    icon: Facebook,
+    href: "https://facebook.com/polarveda_edu",
+    label: "Facebook",
+  },
+  { icon: X, href: "https://x.com/polarveda_edu", label: "X" },
   {
     icon: Youtube,
     href: "https://www.youtube.com/@PolarVedaEducation",
