@@ -1,7 +1,6 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { pre } from "framer-motion/client";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
