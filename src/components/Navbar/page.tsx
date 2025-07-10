@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { pre } from "framer-motion/client";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -163,7 +164,11 @@ const Navbar = () => {
               transition={{ duration: 0.2 }}
               className="absolute top-20 right-4 left-4 z-30 flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-4 text-gray-800 shadow-lg md:hidden"
             >
-              <Link href="/" className={navLinkStyle}>
+              <Link
+                href="/"
+                className={navLinkStyle}
+                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+              >
                 Home
               </Link>
 
@@ -172,7 +177,7 @@ const Navbar = () => {
                   onClick={() => setIsDropdownOpen((prev) => !prev)}
                   className="flex items-center gap-1 transition hover:text-sky-600"
                 >
-                  Explore{" "}
+                  Explore
                   {isDropdownOpen ? (
                     <ChevronUp size={16} />
                   ) : (
@@ -190,17 +195,23 @@ const Navbar = () => {
                     >
                       <li>
                         <Link
-                          href="/offerings/online-education"
-                          onClick={() => setIsDropdownOpen((prev) => !prev)}
+                          href="/offerings/online-tutoring"
+                          onClick={() => {
+                            setIsMobileMenuOpen((prev) => !prev);
+                            setIsDropdownOpen((prev) => !prev);
+                          }}
                           className={navLinkStyle}
                         >
-                          Online Education
+                          Online Tutoring
                         </Link>
                       </li>
                       <li>
                         <Link
                           href="/offerings/test-preparation"
-                          onClick={() => setIsDropdownOpen((prev) => !prev)}
+                          onClick={() => {
+                            setIsMobileMenuOpen((prev) => !prev);
+                            setIsDropdownOpen((prev) => !prev);
+                          }}
                           className={navLinkStyle}
                         >
                           Test Preparation
@@ -209,7 +220,10 @@ const Navbar = () => {
                       <li>
                         <Link
                           href="/offerings/personality-development"
-                          onClick={() => setIsDropdownOpen((prev) => !prev)}
+                          onClick={() => {
+                            setIsMobileMenuOpen((prev) => !prev);
+                            setIsDropdownOpen((prev) => !prev);
+                          }}
                           className={navLinkStyle}
                         >
                           Personality Development
@@ -220,21 +234,38 @@ const Navbar = () => {
                 </AnimatePresence>
               </div>
 
-              <Link href="/about" className={navLinkStyle}>
+              <Link
+                href="/about"
+                className={navLinkStyle}
+                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+              >
                 About Us
               </Link>
-              <Link href="/reviews" className={navLinkStyle}>
+              <Link
+                href="/reviews"
+                className={navLinkStyle}
+                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+              >
                 Reviews
               </Link>
-              <Link href="/gallery" className={navLinkStyle}>
+              <Link
+                href="/gallery"
+                className={navLinkStyle}
+                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+              >
                 Gallery
               </Link>
-              <Link href="/resources" className={navLinkStyle}>
+              <Link
+                href="/resources"
+                className={navLinkStyle}
+                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+              >
                 Resources
               </Link>
               <Link
                 href="/contact"
                 className="rounded-full border border-blue-300 bg-white/30 px-4 py-2 text-center text-sm font-semibold text-sky-800 shadow-sm backdrop-blur-md transition hover:bg-white/50 hover:text-sky-900"
+                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
               >
                 Contact Us
               </Link>
