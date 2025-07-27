@@ -3,9 +3,44 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { UserPlus, X } from "lucide-react";
 import { useState } from "react";
+import { toast } from "sonner";
 
 const CommunityJoin = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    setLoading(true);
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+    };
+
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const json = await res.json();
+
+    if (json.success) {
+      toast.success("Message sent successfully!");
+      setLoading(false);
+      form.reset();
+    } else {
+      toast.error("Failed to send. Please try again.");
+      setLoading(false);
+      console.error(json.error);
+    }
+  };
 
   return (
     <>
@@ -52,7 +87,7 @@ const CommunityJoin = () => {
                 <h3 className="mb-2 text-2xl font-bold text-gray-900">
                   Join Us
                 </h3>
-                <form className="space-y-4">
+                <form className="space-y-4" onSubmit={handleSubmit}>
                   <input
                     type="text"
                     placeholder="Your Name"
@@ -75,6 +110,7 @@ const CommunityJoin = () => {
                   />
                   <button
                     type="submit"
+                    disabled={loading}
                     className="inline-block w-full cursor-pointer rounded-full bg-gradient-to-br from-sky-400 via-sky-500 to-sky-600 px-6 py-2 text-lg font-semibold text-white/90 shadow-sm shadow-sky-500/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-md hover:shadow-sky-500/30"
                   >
                     Submit
